@@ -1,0 +1,127 @@
+/* 초기화 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Robo nano';
+    color: #333;
+  }
+body { margin: 0 auto; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul,
+ol,
+li { list-style: none; }
+h1, h2 { cursor: pointer; }
+header { 
+    padding: 90px 85px 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color:black;
+    font-family: "Questrial", sans-serif;
+    background-color: #ffec63;
+    background-image: 
+        linear-gradient(45deg, #ffd966 25%, transparent 25%, transparent 75%, #ffd966 75%, #ffd966),
+        linear-gradient(-45deg, #ffd966 25%, transparent 25%, transparent 75%, #ffd966 75%, #ffd966);
+    background-size: 60px 60px;
+    background-position: 0 0;
+    animation: slide 4s infinite linear;
+}
+@keyframes slide {
+    from { background-position: 0 0; }  
+    to { background-position: -120px 60px; }
+}
+header h1 { 
+    padding: 10px;
+    font-size: 45px; 
+    border: 3px solid #333;
+    background-color: #fff;
+}
+header div { color: #fff; }
+header ul { font-size: 20px; }
+header li {
+    font-size: 20px;
+    padding: 0 5px;
+    cursor: crosshair;
+}
+header nav li {
+    padding: 3px;
+    border: 1px solid #333;
+    background-color: #fff;
+    text-align: right;
+}
+header nav li:first-child {margin-bottom: 0.5rem; }
+header nav li:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+  }
+article {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px 0 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    cursor: default;
+    margin-bottom: 20px;
+}
+thead { background-color: #ffd966; }
+thead tr { font-size: 17px; }
+tbody tr  { background-color: #f7f7f7; }
+tr { height: 40px; border-bottom: 1px solid; border-color: #fff; }
+th { height: 50px; border-right: 1px solid; border-color: #fff; }
+th:last-child { border-radius: none; }
+button {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover { background-color: #ffd966; color: white; }  
+input { 
+    padding: 10px; 
+    width: 100%; 
+    background-color: #f7f7f7; 
+    border: 1px solid;
+    border-radius: 4px;
+}
+input:focus-visible { background-color: #f1eaee; color: #000; }
+textarea {
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    background-color: #f7f7f7;
+}
+textarea:focus-visible { background-color: #f1eaee; color: #000; }
+hr { border-width: 2px; }
+footer {
+    height: 300px;
+    padding: 85px;
+    background-color: #717070;
+}
+
+.left { float: left; display: inline-block; }
+.right { float: right; display: inline-block; }
+.right button { margin-left: 5px; }
+
+/* 게시물 공통 */
+.container { position: relative; }
+.container::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -145px;
+    width: 35%;
+    height: 34%;
+    background-image: url('../img/pngwing.com.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom right;
+}
+.container > article { padding-bottom: 260px; }
+.pageTitle { text-align: center; }
+.pageTitle h2 { font-size: 30px; font-style: oblique; }

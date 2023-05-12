@@ -1,0 +1,72 @@
+/* 게시물 리스트 id="boardList" */
+#boardList tr { text-align: center; }
+#boardList td:nth-child(1) { 
+  width: 8%; 
+  background-color: #ffd966;
+  border-right: 1px solid #fff;
+}
+#boardList td:nth-child(2) { 
+  text-align: left; 
+  width: 70%; 
+  padding-left: 10px;
+}
+#boardList tbody tr:hover { box-shadow: 0px 0px 10px 7px #ddd5d5; color: #923737;}
+#boardList tbody a {
+  display: inline-block;
+  width: 700px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 게시물 보기 id="boardRead" */
+#boardRead table { border: 1px solid #f7f7f7; }
+#boardRead tr { background-color: #ffd966; }
+#boardRead td { 
+  line-height: 30px; 
+  padding: 10px 10px; 
+  width: 50%; 
+  border: 1px solid #f7f7f7; }
+#boardRead span { 
+  padding: 4px 8px; 
+  margin-right: 5px; 
+  background-color: #fff; 
+  border-radius: 10px; }
+#boardRead td.boardContent { height: 400px; background-color: #f7f7f7; }
+
+/* 게시글 쓰기 id="boardCreate" */
+#boardCreate h2 { text-align: center; }
+#boardCreate form div:nth-child(n) { margin-bottom: 5px; }
+
+/* 게시글 수정 id="boardUpdate" */
+#boardUpdate .header { display: flex;  border: 1px solid;  background-color: #fee; }
+#boardUpdate .header div { width: 50%; padding: 10px; }
+#boardUpdate .header div:nth-child(1) { border-right: 1px solid; }
+#boardUpdate form > div { margin-bottom: 10px; }
+#boardUpdate .boardUpdateHeader { background-color: #ffd966; }
+#boardUpdate .boardUpdateHeader div { 
+  display: inline-block; 
+  padding: 10px 10px; 
+  width: 50%; 
+  border: 1px solid #f7f7f7; 
+}
+#boardUpdate .boardUpdateHeader span { 
+  padding: 4px 8px; 
+  margin-right: 5px; 
+  background-color: #fff; 
+  border-radius: 10px; 
+}
+
+/* footer */
+footer span { color: #fff; }
+.underline {
+  line-height: 0.5em; 
+  vertical-align: 0.5em;
+  border-bottom: .3em solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #edeba8 0%, #e95182 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, #edeba8 0%, #e95182 100%);
+  border-image: linear-gradient(to right, #edeba8 0%, #e95182 100%);
+  border-image-slice: 1;
+}
+.underline span { vertical-align: -0.4em; }
+*::selection { background: rgba(226,145,230,.2); }
