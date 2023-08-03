@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/project/milgaru/static/css/main.9cb64a2b.css",
+    "main.js": "/project/milgaru/static/js/main.418da623.js",
+    "static/js/787.9c04a852.chunk.js": "/project/milgaru/static/js/787.9c04a852.chunk.js",
+    "static/media/pngwing.com.png": "/project/milgaru/static/media/pngwing.com.e7b93976d95fd5af338f.png",
+    "static/media/RobotoMono-Italic-VariableFont_wght.ttf": "/project/milgaru/static/media/RobotoMono-Italic-VariableFont_wght.4aa84a70c646d4e4a5a0.ttf",
+    "static/media/RobotoMono-VariableFont_wght.ttf": "/project/milgaru/static/media/RobotoMono-VariableFont_wght.1b60a7324bb1855d03e4.ttf",
+    "index.html": "/project/milgaru/index.html",
+    "main.9cb64a2b.css.map": "/project/milgaru/static/css/main.9cb64a2b.css.map",
+    "main.418da623.js.map": "/project/milgaru/static/js/main.418da623.js.map",
+    "787.9c04a852.chunk.js.map": "/project/milgaru/static/js/787.9c04a852.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cb64a2b.css",
+    "static/js/main.418da623.js"
+  ]
+}
